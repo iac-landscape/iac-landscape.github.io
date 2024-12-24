@@ -1,0 +1,101 @@
+# Landscape2 guide
+#
+# This file allows defining the content of the landscape guide.
+#
+# Reference documentation: https://github.com/cncf/landscape2/blob/main/docs/config/guide.yml
+
+categories:
+  - category: "生态工具指南"
+    content: |
+      基础设施即代码(IaC)生态系统中的各类工具使用指南和最佳实践。
+
+    subcategories:
+      - subcategory: "DevOps工具链"
+        content: |
+          IaC DevOps工具链集成最佳实践：
+
+          1. 版本控制与协作
+          - GitHub Actions：云原生CI/CD自动化平台
+          - GitLab：完整的DevOps平台
+          - Jenkins：领先的开源自动化服务器
+          - Azure DevOps：企业级开发协作平台
+          - AWS CodePipeline：AWS的持续交付服务
+          - Atlantis：Terraform PR自动化
+          - 阿里云云效：阿里云一站式DevOps平台
+          - 腾讯CODING：腾讯云DevOps研发管理平台
+
+          2. 状态管理工具
+          - Terraform Cloud：企业级状态管理
+          - Spacelift：IaC管理平台
+          - env0：多云IaC自动化平台
+
+      - subcategory: "安全工具链"
+        content: |
+          IaC安全工具使用指南：
+
+          1. 安全扫描工具
+          - Checkov：IaC安全扫描
+          - tfsec：Terraform代码分析
+          - Snyk IaC：基础设施代码扫描
+          - Terrascan：多云配置审计
+          - Semgrep：静态代码分析
+
+          2. 策略管理与合规
+          - HashiCorp Sentinel：策略即代码
+          - Open Policy Agent：策略执行引擎
+          - AWS Config：合规性检查
+          - Azure Policy：云资源治理
+
+          3. 密钥与访问管理
+          - HashiCorp Vault：密钥管理平台
+          - AWS Secrets Manager：密钥轮换与管理
+          - Azure Key Vault：云密钥管理
+          - GitGuardian：密钥检测与修复
+
+      - subcategory: "安全最佳实践"
+        content: |
+          IaC安全最佳实践指南：
+
+          1. 代码安全
+          - 最小权限原则实施
+          - 敏感信息加密存储
+          - 基础设施版本控制
+          - 代码审查流程
+
+          2. 运行时安全
+          - 资源访问控制
+          - 网络安全配置
+          - 日志审计追踪
+          - 漏洞管理流程
+
+      - subcategory: "配置管理工具"
+        content: |
+          IaC配置管理最佳实践：
+
+          1. 自动化配置
+          - Terraform：基础设施编排
+          - Ansible：服务器配置管理
+          - Puppet：基础设施自动化
+          - Chef：配置自动化
+
+          2. 云原生工具
+          - AWS CloudFormation：AWS资源编排
+          - Azure ARM：Azure资源管理
+          - Google Cloud Deployment：GCP部署管理
+          - Pulumi：多语言IaC支持
+
+      - subcategory: "可视化与监控"
+        content: |
+          IaC可视化和监控工具使用指南：
+
+          1. 基础设施可视化
+          - Terraform Graph：依赖关系图
+          - Inframap：资源关系可视化
+          - Blast Radius：Terraform分析
+          - Brainboard：架构设计工具
+
+          2. 成本管理
+          - Infracost：Terraform成本预估
+          - CloudHealth：多云成本管理
+          - AWS Cost Explorer：AWS成本分析
+          - Azure Cost Management：Azure成本优化

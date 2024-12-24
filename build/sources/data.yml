@@ -1,0 +1,421 @@
+# Landscape2 data
+#
+# This file contains the data that will be used to generate the landscape.
+#
+# Reference documentation: https://github.com/cncf/landscape2/blob/main/docs/config/data.yml
+
+categories:
+  - name: DevOps Tools
+    subcategories:
+      - name: CI/CD & Automation
+        items:
+          - name: GitHub Actions
+            description: Cloud-native CI/CD automation platform
+            homepage_url: https://github.com/features/actions
+            logo: github-actions.svg
+
+          - name: GitLab
+            description: Complete DevOps platform
+            homepage_url: https://gitlab.com/
+            logo: gitlab.svg
+
+          - name: Gitee
+            description: Code hosting platform in China
+            homepage_url: https://gitee.com/
+            logo: gitee.svg
+
+          - name: Jenkins
+            description: Leading open-source automation server
+            homepage_url: https://www.jenkins.io/
+            logo: jenkins.svg
+
+
+          - name: Spinnaker
+            description: Open-source, multi-cloud continuous delivery platform
+            homepage_url: https://spinnaker.io/
+            logo: spinnaker.svg
+
+
+          - name: Azure DevOps
+            description: Enterprise development collaboration platform
+            homepage_url: https://azure.microsoft.com/en-us/services/devops/
+            logo: azure-devops.svg
+
+          - name: AWS CodePipeline
+            description: Continuous delivery service for AWS
+            homepage_url: https://aws.amazon.com/codepipeline/
+            logo: aws-codepipeline.svg
+
+          - name: Atlantis
+            description: Terraform Pull Request Automation
+            homepage_url: https://www.runatlantis.io/
+            logo: atlantis.svg
+
+          - name: 阿里云云效
+            description: "阿里云一站式 DevOps 平台,提供代码托管、CI/CD、制品库等服务"
+            homepage_url: https://www.aliyun.com/product/yunxiao
+            logo: yunxiao.svg
+
+          - name: 腾讯 CODING
+            description: "腾讯云 DevOps 研发管理平台,提供代码托管、项目管理、CI/CD 等服务"
+            homepage_url: https://coding.net/
+            logo: coding.svg
+
+  - name: Cost Management
+    subcategories:
+      - name: Cost Analysis & Optimization
+        items:
+          - name: Infracost
+            description: Cloud cost estimates for Terraform
+            homepage_url: https://www.infracost.io/
+            logo: infracost.svg
+
+          - name: Spot by NetApp
+            description: Cloud infrastructure optimization platform
+            homepage_url: https://spot.io/
+            logo: spot.svg
+
+          - name: Harness
+            description: Intelligent cloud cost management
+            homepage_url: https://harness.io/
+            logo: harness.svg
+
+  - name: Security Tools
+    subcategories:
+      - name: Security Analysis
+        items:
+          - name: Semgrep
+            description: Static analysis security scanner
+            homepage_url: https://semgrep.dev/
+            logo: semgrep.svg
+
+          - name: Checkov
+            description: Infrastructure security scanner
+            homepage_url: https://www.checkov.io/
+            logo: checkov.svg
+
+          - name: tfsec
+            description: Security scanner for Terraform code
+            homepage_url: https://aquasecurity.github.io/tfsec/
+            logo: tfsec.svg
+
+          - name: Terrascan
+            description: Security vulnerability scanner for IaC
+            homepage_url: https://runterrascan.io/
+            logo: terrascan.svg
+
+          - name: Snyk
+            description: Find and fix infrastructure security issues
+            homepage_url: https://snyk.io/product/infrastructure-as-code-security/
+            logo: snyk.svg
+
+          - name: TerraGoat
+            description: Cloud security automation
+            homepage_url: https://github.com/bridgecrewio/terragoat
+            logo: terragoat.svg
+
+      - name: Policy & Compliance
+        items:
+          - name: HashiCorp Sentinel
+            description: Policy as Code framework
+            homepage_url: https://www.hashicorp.com/sentinel
+            logo: sentinel.svg
+
+          - name: Open Policy Agent
+            description: Policy-based control for cloud environments
+            homepage_url: https://www.openpolicyagent.org/
+            logo: opa.svg
+
+          - name: AWS Config
+            description: AWS resource compliance and audit
+            homepage_url: https://aws.amazon.com/config/
+            logo: aws-config.svg
+
+          - name: Azure Policy
+            description: Enforce organizational standards
+            homepage_url: https://azure.microsoft.com/products/azure-policy
+            logo: azure-policy.svg
+
+      - name: Secret Management
+        items:
+          - name: HashiCorp Vault
+            description: Secrets management platform
+            homepage_url: https://www.vaultproject.io/
+            logo: vault.svg
+
+          - name: AWS Secrets Manager
+            description: Rotate, manage, and retrieve secrets
+            homepage_url: https://aws.amazon.com/secrets-manager/
+            logo: aws-secrets-manager.svg
+
+          - name: Azure Key Vault
+            description: Cloud key management solution
+            homepage_url: https://azure.microsoft.com/products/key-vault
+            logo: azure-key-vault.svg
+
+          - name: GitGuardian
+            description: Secrets detection and remediation
+            homepage_url: https://www.gitguardian.com/
+            logo: gitguardian.svg
+
+  - name: Configuration Management
+    subcategories:
+      - name: Infrastructure Configuration
+        items:
+          - name: Ansible
+            description: Automation for cloud provisioning and configuration
+            homepage_url: https://www.ansible.com/
+            logo: ansible.svg
+
+          - name: Progress Chef
+            description: Infrastructure automation platform
+            homepage_url: https://www.chef.io/
+            logo: chef.svg
+
+          - name: Puppet
+            description: Infrastructure automation and delivery
+            homepage_url: https://puppet.com/
+            logo: puppet.svg
+
+          - name: saltstack
+            description: Infrastructure automation and delivery
+            homepage_url: https://saltstack.com/
+            logo: saltstack.svg
+
+          - name: cloud-init
+            description: Cloud instance initialization
+            homepage_url: https://cloud-init.io/
+            logo: cloud-init.svg
+
+          - name: PowerShell
+            description: Task automation and configuration management framework from Microsoft
+            homepage_url: https://docs.microsoft.com/powershell/
+            logo: powershell.svg
+
+          - name: Shell Scripts
+            description: Command-line scripting language for Unix/Linux systems
+            homepage_url: https://www.gnu.org/software/bash/
+            logo: shell.svg
+
+  - name: Visualization Tools
+    subcategories:
+      - name: Infrastructure Visualization
+        items:
+          - name: infraMap
+            description: Infrastructure relationship visualization
+            homepage_url: https://github.com/cycloidio/inframap
+            logo: inframap.svg
+
+          - name: Blast Radius
+            description: Terraform dependency visualization
+            homepage_url: https://github.com/28mm/blast-radius
+            logo: blast-radius.svg
+
+          - name: Brainboard
+            description: Visual cloud infrastructure design
+            homepage_url: https://www.brainboard.co/
+            logo: brainboard.svg
+
+  - name: IaC Platforms & Tools
+    subcategories:
+      - name: Infrastructure Management
+        items:
+          - name: Hashicorp Cloud Platform
+            description: Enterprise infrastructure automation
+            homepage_url: https://www.terraform.io/cloud
+            logo: hcp.svg
+
+          - name: Spacelift
+            description: Infrastructure delivery platform
+            homepage_url: https://spacelift.io/
+            logo: spacelift.svg
+
+          - name: env0
+            description: IaC automation and collaboration
+            homepage_url: https://www.env0.com/
+            logo: env0.svg
+
+          - name: Scaler
+            description: Infrastructure as Code platform
+            homepage_url: https://scaler.com/
+            logo: scaler.svg
+
+          - name: AWS CloudFormation
+            description: Infrastructure as Code for AWS
+            homepage_url: https://aws.amazon.com/cloudformation/
+            logo: aws-cloudformation.svg
+
+          - name: Azure Resource Manager
+            description: Infrastructure as Code for Azure
+            homepage_url: https://azure.microsoft.com/resources/cloud-services/resource-manager/
+            logo: azure-resource-manager.svg
+
+          - name: Terrateam
+            description: Terraform management platform
+            homepage_url: https://terrateam.io/
+            logo: terrateam.svg
+
+          - name: Finisterra
+            description: Terraform management platform
+            homepage_url: https://finisterra.io/
+            logo: finisterra.svg
+
+          - name: Massdriver
+            description: Terraform management platform
+            homepage_url: https://massdriver.io/
+            logo: massdriver.svg
+
+      - name: Tools
+        items:
+          - name: Terraform
+            description: HashiCorp's infrastructure as code tool
+            homepage_url: https://www.terraform.io/
+            logo: terraform.svg
+
+          - name: OpenTofu
+            description: Open source Terraform alternative
+            homepage_url: https://opentofu.org/
+            logo: opentf.svg
+
+          - name: Pulumi
+            description: Infrastructure as Code for any cloud
+            homepage_url: https://www.pulumi.com/
+            logo: pulumi.svg
+
+          - name: AWS Cloud Development Kit
+            description: Infrastructure as Code for AWS
+            homepage_url: https://aws.amazon.com/cdk/
+            logo: aws-cdk.svg
+
+          - name: Crossplane
+            description: Infrastructure as Code for any cloud
+            homepage_url: https://crossplane.io/
+            logo: crossplane.svg
+
+          - name: Terragrunt
+            description: Terraform automation tool
+            homepage_url: https://terragrunt.gruntwork.io/
+            logo: terragrunt.svg
+
+          - name: Terraform-docs
+            description: Terraform documentation generator
+            homepage_url: https://terraform-docs.io/
+            logo: terraform-docs.svg
+
+          - name: Terratag
+            description: Terraform tag generator
+            homepage_url: https://terratag.io/
+            logo: terratag.svg
+
+
+  - name: Cloud Infrastructure
+    subcategories:
+      - name: Cloud Providers
+        items:
+          - name: AWS
+            description: Amazon Web Services cloud platform
+            homepage_url: https://aws.amazon.com/
+            logo: aws.svg
+
+          - name: Microsoft Azure
+            description: Microsoft's cloud computing platform
+            homepage_url: https://azure.microsoft.com/
+            logo: azure.svg
+
+          - name: Google Cloud
+            description: Google's cloud computing services
+            homepage_url: https://cloud.google.com/
+            logo: gcp.svg
+
+          - name: Alibaba Cloud
+            description: Alibaba's cloud computing platform
+            homepage_url: https://www.alibabacloud.com/
+            logo: alicloud.svg
+
+          - name: Tencent Cloud
+            description: Tencent's cloud services platform
+            homepage_url: https://www.tencentcloud.com/
+            logo: tencent.svg
+
+          - name: Huawei Cloud
+            description: Huawei's cloud computing services
+            homepage_url: https://support.huaweicloud.com/
+            logo: huawei-cloud.svg
+
+          - name: Oracle Cloud
+            description: Oracle's cloud computing platform
+            homepage_url: https://www.oracle.com/cloud/
+            logo: oracle-cloud.svg
+
+      - name: Cloud Native
+        items:
+          - name: Kubernetes
+            description: Container orchestration platform
+            homepage_url: https://kubernetes.io/
+            logo: kubernetes.svg
+
+          - name: Docker
+            description: Containerization platform
+            homepage_url: https://www.docker.com/
+            logo: docker.svg
+
+          - name: Helm
+            description: Kubernetes package manager
+            homepage_url: https://helm.sh/
+            logo: helm.svg
+
+      - name: Software
+        items:
+          - name: Apache Kafka
+            description: Distributed streaming platform
+            homepage_url: https://kafka.apache.org/
+            logo: kafka.svg
+
+          - name: RabbitMQ
+            description: Message broker
+            homepage_url: https://www.rabbitmq.com/
+            logo: rabbitmq.svg
+
+          - name: Nginx
+            description: Web server and reverse proxy
+            homepage_url: https://www.nginx.com/
+            logo: nginx.svg
+
+
+      - name: Database
+        items:
+          - name: MySQL
+            description: Open-source relational database management system
+            homepage_url: https://www.mysql.com/
+            logo: mysql.svg
+
+          - name: PostgreSQL
+            description: Object-relational database management system
+            homepage_url: https://www.postgresql.org/
+            logo: postgresql.svg
+
+          - name: Redis
+            description: In-memory data structure store
+            homepage_url: https://redis.io/
+            logo: redis.svg
+
+          - name: MongoDB
+            description: NoSQL database
+            homepage_url: https://www.mongodb.com/
+            logo: mongodb.svg
+
+
+items:
+  - name: Terraform
+    category: Infrastructure Tools
+    subcategory: IaC Core
+    homepage_url: https://www.terraform.io/
+    repo_url: https://github.com/hashicorp/terraform
+    description: "HashiCorp's infrastructure as code tool"
+    
+  - name: GitHub Actions
+    category: DevOps Tools
+    subcategory: CI/CD
+    homepage_url: https://github.com/features/actions
+    description: "Automation and CI/CD platform"
+

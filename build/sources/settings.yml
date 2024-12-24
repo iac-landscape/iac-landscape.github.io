@@ -1,0 +1,106 @@
+# Landscape2 settings
+#
+# This settings file allows customizing some aspects of the landscape.
+#
+# Reference documentation: https://github.com/cncf/landscape2/blob/main/docs/config/settings.yml
+
+foundation: "Infrastructure as Code"
+
+url: http://127.0.0.1:8000
+
+colors:
+  color1: "rgba(69, 39, 160, 1)"      # 深紫色
+  color2: "rgba(25, 118, 210, 1)"     # 蓝色
+  color3: "rgba(123, 31, 162, 1)"     # 紫色
+  color4: "rgba(38, 50, 56, 1)"       # 深灰
+  color5: "rgba(66, 165, 245, 0.8)"   # 淡蓝
+  color6: "rgba(26, 35, 126, 0.7)"    # 深蓝
+  color7: "rgba(236, 239, 241, 1)"    # 浅灰
+
+featured_items:
+  - field: category
+    options:
+      - value: "Cloud Infrastructure"
+        order: 1
+        label: "Cloud Infrastructure"
+      - value: "Security Tools"
+        order: 2
+        label: "Security Tools"
+      - value: "IaC Platforms & Tools"
+        order: 3
+        label: "IaC Platforms & Tools"
+      - value: "DevOps Tools"
+        order: 4
+        label: "DevOps Tools"
+      - value: "Cost Management"
+        order: 5
+        label: "Cost Management"
+      - value: "Configuration Management"
+        order: 6
+        label: "Configuration Management"
+      - value: "Visualization Tools"
+        order: 7
+        label: "Visualization Tools"
+
+
+view:
+  mode: grid
+
+groups:
+  - name: "IaC Ecosystem"
+    categories:
+      - Cloud Infrastructure
+      - Security Tools
+      - IaC Platforms & Tools
+      - DevOps Tools
+      - Cost Management
+      - Configuration Management
+      - Visualization Tools
+    
+
+grid_items_size: large
+
+footer:
+  links:
+    # TODO:
+    # facebook: "https://www.facebook.com/InfrastructureAsCode/"
+    # flickr: "https://www.flickr.com/photos/iac-albums"
+    # homepage: "https://iac-landscape.io"
+    # instagram: "https://www.instagram.com/iac_landscape/"
+    # linkedin: "https://www.linkedin.com/company/iac-landscape/"
+    # slack: "https://slack.iac-landscape.io/"
+    # twitch: "https://www.twitch.tv/iac_landscape"
+    # twitter: "https://twitter.com/iac_landscape"
+    # youtube: "https://www.youtube.com/c/iac_landscape"
+
+    github: "https://github.com/iac-landscape"
+    wechat: "https://kaliarch-bucket-1251990360.cos.ap-beijing.myqcloud.com/blog_img/20241224142657.png"
+    homepage: "https://redhatxl.github.io/"
+    
+  logo: "https://kaliarch-bucket-1251990360.cos.ap-beijing.myqcloud.com/blog_img/iac-landscape.svg"
+
+header:
+  links:
+    github: "https://github.com/iac-landscape/landscape"
+  logo: "https://kaliarch-bucket-1251990360.cos.ap-beijing.myqcloud.com/blog_img/iac-landscape.svg"
+
+screenshot_width: 1500
+
+items:
+  - category: Infrastructure Tools
+    name: Terraform
+    homepage_url: https://www.terraform.io/
+    repo_url: https://github.com/hashicorp/terraform
+    description: "HashiCorp's infrastructure as code tool"
+    logo: "iac-landscape/logos/terraform.svg"  # Ensure this logo is in the correct directory and has the correct size
+    
+  - category: DevOps Tools
+    name: GitHub Actions
+    homepage_url: https://github.com/features/actions
+    description: "Automation and CI/CD platform"
+    logo: "iac-landscape/logos/github-actions.svg"  # Ensure this logo is in the correct directory and has the correct size
+
+  - category: Security Tools
+    name: Checkov
+    homepage_url: https://www.checkov.io/
+    description: "Static code analysis tool for infrastructure"
